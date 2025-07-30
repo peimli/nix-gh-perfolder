@@ -1,0 +1,11 @@
+name: Ansible folder
+on:
+  push:
+    paths:
+      - 'ansible/**'
+
+jobs:
+  handle-api:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "ansible folder changed!"
