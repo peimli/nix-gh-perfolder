@@ -1,0 +1,11 @@
+name: Backup folder
+on:
+  push:
+    paths:
+      - 'backup/**'
+
+jobs:
+  handle-api:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Backup folder changed!"
