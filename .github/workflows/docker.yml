@@ -1,0 +1,11 @@
+name: Docker folder
+on:
+  push:
+    paths:
+      - 'docker/**'
+
+jobs:
+  handle-api:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "docker folder changed!"
